@@ -19,7 +19,7 @@ from logging.handlers import RotatingFileHandler
 #rohit_1888 on Tg
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7106463170:AAFFduWSYaBpZoxFiIb_g9B_r_KKI6NbA7I")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "22281455"))
 #Your API Hash from my.telegram.org
@@ -41,11 +41,11 @@ TIME = int(os.environ.get("TIME", "900"))
 
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL1 = int(os.environ.get("FORCE_SUB_CHANNEL1", "-1002405520729"))
+FORCE_SUB_CHANNEL1 = int(os.environ.get("FORCE_SUB_CHANNEL1", "-1002264662846"))
 #put 0 to disable
 FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002381818578"))#put 0 to disable
 FORCE_SUB_CHANNEL3 = int(os.environ.get("FORCE_SUB_CHANNEL3", "-1002328670818"))#put 0 to disable
-FORCE_SUB_CHANNEL4 = int(os.environ.get("FORCE_SUB_CHANNEL4", "-1002409372155"))#put 0 to disable
+FORCE_SUB_CHANNEL4 = int(os.environ.get("FORCE_SUB_CHANNEL4", "-1002325395282"))#put 0 to disable
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -70,7 +70,7 @@ ABOUT_TXT = "<b><blockquote>○ 𝐎ᴡɴᴇʀ : <a href='t.me/karasu_07'>𝐒�
 START_MSG = os.environ.get("START_MESSAGE", "<b>ʜɪ ᴛʜᴇʀᴇ... {first}! 💥\n\nɪ ᴀᴍ ᴀ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ...!\nɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ᴛʜʀᴏᴜɢʜ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ʟɪɴᴋ....!\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ - <a href=https://t.me/Adult_Flux>ᴀᴅᴜʟᴛ ғʟᴜx</a></b>")
 try:
     ADMINS=[7827448605]
-    for x in (os.environ.get("ADMINS", "7827448605 1683225887").split()):
+    for x in (os.environ.get("ADMINS", "7827448605 1683225887 5754018423").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
